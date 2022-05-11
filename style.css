@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: #000;
     opacity: 80%;
     margin: auto;
-    z-index: 90;
+    z-index: 100;
 
     /* border: 20px solid red; */
 }
@@ -65,13 +65,15 @@ h1 a {
 }
 
 .btn{
+    justify-content: center;
     background-color: aqua;
     color: #000;
     font-size: 15px;
     font-weight: 1000;
     border-radius: 20px;
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 70%;
+    cursor: pointer;
 }
 
 
@@ -103,6 +105,7 @@ section.module:last-child{
 section.module h2{
     margin-bottom: 40px;
     font-size: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 section.module.content{
@@ -141,7 +144,7 @@ section.module.paralax:after{
 }
 
 section.module.paralax-1{
-    background-image: url(https://wallpaperaccess.com/full/763131.jpg);
+    background-image: url(https://www.teahub.io/photos/full/91-915856_sunset-gif.gif);
 }
 
 section.module.paralax-2{
@@ -149,8 +152,13 @@ section.module.paralax-2{
 }
 
 section.module.paralax-3{
-    background-image: url(https://images.hdqwalls.com/wallpapers/sea-side-4k-h1.jpg);
+    background-image: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1802/Humpback-whale-underwater-sea_1920x1200.jpg);
 }
+
+section.module.paralax-4{
+    background-image: url(https://c.tenor.com/8KLkpFEcAhgAAAAC/swimming-coral-reef.gif);
+}
+
 
 section.module.paralax h1{
     text-align: center;
@@ -173,3 +181,11 @@ section.module.paralax h1{
 } */
 
 /* FOOTER    //////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.footer .container_footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-color: aquamarine;
+}
