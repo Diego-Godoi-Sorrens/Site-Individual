@@ -57,24 +57,39 @@ ul li a:hover{
     border-bottom: 3px solid white;
 }
 
+.diferent{
+    color: aqua;
+    cursor: pointer;
+}
+
+.diferent:hover{
+    border-bottom: 3px solid aqua;
+}
+
   
 h1 a {
     color: aquamarine;
     text-decoration: none;
 }
 
+#title {
+    animation: action 2s;
+}
+
+@keyframes action {
+    from {
+        transform: translateY(100px)
+    }
+    to{
+        transform: translateY(0px);
+    }
+
+}
+
 .barra-v{
     width: 1px;
     height: 60%;
     background-color: white;
-}
-
-.diferent{
-    color: aqua;
-}
-
-.diferent:hover{
-    border-bottom: 3px solid aqua;
 }
 
 /* INDEX     //////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -190,4 +205,17 @@ section.module.paralax h1{
     width: 100%;
     height: 80vh;
     background-color: aquamarine;
+}
+
+/* menu */
+
+.menu{
+    display: none;
+    height: 40vh;
+    width: 30%;
+    background-color: #000;
+    position: absolute;
+    z-index: 200;
+    top: 20vh;
+    right: -30%;
 }
