@@ -7,6 +7,10 @@ body{
     overflow-wrap: break-word;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-weight: 900;
     color: black;
@@ -18,64 +22,60 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    position: absolute;
-    background-color: #000;
-    opacity: 80%;
-    margin: auto;
+    position: fixed;
     z-index: 100;
-
-    /* border: 20px solid red; */
+    background: linear-gradient(rgba(0,0,0,0.7), transparent);
 }
 
 .navbar{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    padding: 0;
-    width: 60%;
     align-items: center;
-    opacity: 100%;
-    /* border: 3px solid blue; */
-}
- 
-li a {
-    text-decoration: none;
-    color: aqua;
+    width: 100%;
+    text-align: center;
 }
 
-.barra-v{
-    height: 60%;
-    width: 1px;
-    background-color: rgb(255, 255, 255);
+ul li{
+    display: inline-block;
+    padding: 5px;
 }
+
+ul li a{
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    margin: 15px 10px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all 0.25 ease-in-out;
+}
+
+ul li a:hover{
+    border-bottom: 3px solid white;
+}
+
   
 h1 a {
     color: aquamarine;
     text-decoration: none;
 }
 
-.container_button{
-    display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
-    height: 100%;
-    /* border: 3px solid blue; */
+.barra-v{
+    width: 1px;
+    height: 60%;
+    background-color: white;
 }
 
-.btn{
-    justify-content: center;
-    background-color: aqua;
-    color: #000;
-    font-size: 15px;
-    font-weight: 1000;
-    border-radius: 20px;
-    width: 35%;
-    height: 70%;
-    cursor: pointer;
+.diferent{
+    color: aqua;
 }
 
+.diferent:hover{
+    border-bottom: 3px solid aqua;
+}
 
 /* INDEX     //////////////////////////////////////////////////////////////////////////////////////////////////*/
 .wrapper{
@@ -106,11 +106,13 @@ section.module h2{
     margin-bottom: 40px;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
+    color: rgb(12, 211, 211);
 }
 
 section.module.content{
     padding: 40px 0;
-    background-color: #ece7d5;
+    background-color: #313d47;
+    color: rgb(171, 238, 238);
 }
 
 section.module.paralax{
