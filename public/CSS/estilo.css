@@ -39,7 +39,7 @@ body{
 .manual-navigation{
     position: absolute;
     width: 800px;
-    margin-top: -40px;
+    margin-top: 360px;
     display: flex;
     justify-content: center;
 
@@ -55,7 +55,7 @@ body{
 }
 
 .manual-btn:not(:Last-child){
-    margin-right: -40px;
+    margin-right: 40px;
 }
 
 .manual-btn:hover{
@@ -82,7 +82,7 @@ body{
     position: absolute;
     display: flex;
     width: 800px;
-    margin-top: 373px;
+    margin-top: 360px;
     justify-content: center;
 
     border: red solid 2px;
