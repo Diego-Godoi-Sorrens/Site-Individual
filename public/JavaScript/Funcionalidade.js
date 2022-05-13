@@ -13,12 +13,15 @@ function go_cadastro() {
 }
 
 /* Término da função do Header */
+/* Término da função do Menu */
 
 function abrir_menu(){
     id_menu.innerCSS =    `display: block; 
     right: 0%;>`
 
 }
+
+/* Término da função do Header */
 
 
 
