@@ -7,6 +7,10 @@
 
         <link rel="stylesheet" href="./CSS/style.css">
         <script src="./JavaScript/Funcionalidade.js"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Orelega+One&display=swap');
+        </style>
         
         <title>Oração ao mar</title>
 
@@ -15,9 +19,7 @@
         
         <div class="header">
             <div class="container_header">
-                <img onclick="go_index()" src="">
-                
-                <h1><a href="#title">O</a></h1>
+                                
                 <ul class="navbar">
 
                     <li><a href="#ANTARTICO">Antártico</a></li>
@@ -26,32 +28,44 @@
                     <li><a href="#PACIFICO">Pacífico</a></li>
                     <li><a href="#INDICO">Índico</a></li>
 
-                    <!-- <div class="container_button"> -->
                         <div class="barra-v"></div>
-                        <!-- <button onclick="go_login()" class="btn">Entrar</button>
-                        <button onclick="go_cadastro()" class="btn solicitar">Cadastrar-se</button> -->
+
                         <li><a onclick="go_login()" class="diferent">Entrar</a></li>
                         <li><a onclick="go_cadastro()" class="diferent">Cadastrar-se</a></li>
-                    <!-- </div> -->
                 </ul>
 
             </div>
         </div>
 
-        <div id="id_menu" class="menu"></div>
+        <button onclick="abrir_menu()" id="abrir-menu" class="abrir"><h1><a>☰</a></h1></button>
+
+        <div id="id_menu" class="menu">
+            <h1><a href="javascript:void(0)" class="fechar" onclick="fechar()">X</a></h1>
+            <li><a href="#ANTARTICO" onclick="color()">Antártico</a></li>
+            <li><a href="#ARTICO" onclick="color()">Ártico</a></li>
+            <li><a href="#ATLANTICO" onclick="color()">Atlântico</a></li>
+            <li><a href="#PACIFICO" onclick="color()">Pacífico</a></li>
+            <li><a href="#INDICO" onclick="color()">Índico</a></li>
+
+            <div class="barra-v"></div>
+
+            <li><a onclick="go_login()" class="diferent">Entrar</a></li>
+            <li><a onclick="go_cadastro()" class="diferent">Cadastrar-se</a></li>
+        </div>
 
         <div class="wrapper">
             <main>
 
 
-                <section class="module paralax paralax-1">
-                    <h1 class="titulo" id="title">A Beleza <br>dos Oceanos</h1>
+                <section class="module paralax paralax-1" data-anime="left">
+                    <!-- <video autoplay muted loop >
+                        <source src="./img/Ocean.mp4">
+                    </video> -->
+                    <h1 class="titulo" id="title"> BeLeza <br>dos Oceanos</h1>
                 </section>
 
-                <section class="module content">
+                <section class="module content"> 
                     <div class="container">
-
-                        <button onclick="abrir_menu()">menu</button>
 
                         <h2>Gozaimasu</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -81,7 +95,7 @@
                     </div>
                 </section>
 
-                <section class="module paralax paralax-2" id="ANTARTICO">
+                <section class="module paralax paralax-2" id="ANTARTICO" data-anime="left">
                     <h1>Antártico</h1>
                 </section>
 
@@ -111,7 +125,7 @@
                 </section>
 
                 <section class="module paralax paralax-3" id="ARTICO">
-                    <h1>Ártico</h1>
+                    <h1>ÁrtiCo</h1>
                 </section>
 
                 <section class="module content">
@@ -131,6 +145,12 @@
                         </p>
 
                         <br>
+
+
+                </section>
+
+                <section class="module content">
+                    <div class="container">
 
                         <div class="banner">
                             <div class="slider">
@@ -227,7 +247,7 @@
                     </div>
                 </section>
 
-                <section class="module paralax paralax-3" id="INDICO">
+                <section class="module paralax paralax-4" id="INDICO">
                     <h1>Índico</h1>
                 </section>
 
@@ -254,42 +274,12 @@
             </main>
         </div>
 
-        <div class="wrapper">
-            <main>
 
-
-                <section class="module paralax paralax-2">
-                    <h1 class="titulo">A Beleza <br>dos Oceanos</h1>
-                </section>
-
-                <section class="module content">
-                    <div class="container">
-
-                        <h2>Bom dia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Delectus obcaecati cupiditate, ullam dolorum pariatur minima, 
-                            velit laboriosam harum sequi suscipit modi doloribus accusamus 
-                            nostrum veritatis animi, sint sit autem fugiat!
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Delectus obcaecati cupiditate, ullam dolorum pariatur minima, 
-                            velit laboriosam harum sequi suscipit modi doloribus accusamus 
-                            nostrum veritatis animi, sint sit autem fugiat!
-                        </p>
-
-                    </div>
-                </section>
-
-            
-            </main>
-        </div>
-
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="container_footer">
-                <!-- <div class="footer_logo">
+                <div class="footer_logo">
                     <img class="footer_img" src="./img/Logo_Acalanto_rodape.png">
-                </div> -->
+                </div>
                 <div class="footer_labels">
                     <div class="footer_info">
                         <h3>Páginas:</h3>
@@ -318,7 +308,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     
 
     </body>

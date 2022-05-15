@@ -15,19 +15,18 @@ function go_cadastro() {
 /* Término da função do Header */
 /* Término da função do Menu */
 
-function abrir_menu(){
-    id_menu.innerCSS =    `display: block; 
-    right: 0%;>`
-
+function abrir_menu() {
+    document.getElementById("id_menu").style.width = "100%";
+}
+function fechar() {
+    document.getElementById("id_menu").style.width = "0";
 }
 
-/* Término da função do Header */
+function color(){
+    document.getElementById("id_menu").style.width="0";
+}
 
-
-
-
-
-
+/* Término da função do Menu */
 
 
 
