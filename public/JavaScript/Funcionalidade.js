@@ -30,20 +30,20 @@ function color(){
 /* Término da função do Menu *////////////////////////////////////////////////////////////////////////////
 
 /* Começo da função do slider *///////////////////////////////////////////////////////////////////////////
+ 
+let cont = 1;
 
 setInterval(function(){
     passar_slide();
-}, 2000)
+}, 4000)
 
 function passar_slide(){
-    let cont = 1;
-    document.getElementById("radio1").checked = true;
 
+    document.getElementById("radio1").checked = true;
     cont++;
     if(cont > 4){
         cont = 1;
     }
-
     document.getElementById("radio"+cont).checked = true;
 }
 
