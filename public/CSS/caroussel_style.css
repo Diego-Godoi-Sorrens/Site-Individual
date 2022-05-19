@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: none;
 }
 
 @font-face{
@@ -9,15 +10,21 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece{
+    position: absolute;
+    background-color: transparent;
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(13, 185, 185);
+    background-color: rgb(243, 8, 86);
+    border-radius: 10px;
 }
   
 ::-webkit-scrollbar-track {
-    background-color: #313d47;
+   -webkit-border-radios: 10px;
 }
 
 
@@ -29,7 +36,7 @@ body{
     place-items: center; */
     height: 100vh;
     width: 100vw;
-    background-color: #313d47;
+    background-color: rgb(9, 83, 88);
 }
 
 .items{
@@ -65,7 +72,8 @@ img{
     display: flex;
     height: 100vh;
     justify-content: space-evenly;
-    position: absolute;
+    position: relative;
+    left: 0;
     z-index: 100;
     background: linear-gradient(rgba(0,0,0,0.7), transparent);
 }
@@ -231,6 +239,13 @@ section.module{
     margin-bottom: 40px 0;
 }
 
+/* .titulo{
+    font-family: vintageQueens;
+    font-size: 15em;
+    color: rgb(255, 208, 0);
+    font-weight: 50;
+} */
+
 section.module:last-child{
     margin-bottom: 0;
 }
@@ -281,8 +296,7 @@ section.module.paralax:after{
 }
 
 section.module.paralax-1{
-    background-image: url(https://c.tenor.com/8KLkpFEcAhgAAAAC/swimming-coral-reef.gif);
-    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/6430337.jpg);
 }
 
 
@@ -301,9 +315,20 @@ section.module.paralax-4{
 
 section.module.paralax h1{
     text-align: center;
-    font-size: 78px;
     z-index: 50;
+    font-family: vintageQueens;
+    font-size: 15em;
+    color: rgb(4, 90, 90);
+    font-weight: 50;
+    mix-blend-mode:hard-light;
+    animation: hue-animation 0.7s alternate infinite;
 }
+/* 
+@keyframes hue-animation{
+    100%{
+        filter: hue-rotate{360deg};
+    }
+} */
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -314,6 +339,8 @@ section.module.paralax h1{
     height: 100%;
     width: 100%;
     z-index: 300;
+    pointer-events: all;
+
     /* background: #313d47; */
     /* background-image: url("https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg"); */
 }

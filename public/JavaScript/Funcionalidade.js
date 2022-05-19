@@ -31,7 +31,7 @@ function color(){
 
 /* Começo da função do slider *///////////////////////////////////////////////////////////////////////////
  
-let cont = 1;
+let contador = 1;
 
 setInterval(function(){
     passar_slide();
@@ -40,11 +40,11 @@ setInterval(function(){
 function passar_slide(){
 
     document.getElementById("radio1").checked = true;
-    cont++;
-    if(cont > 4){
-        cont = 1;
+    contador++;
+    if(contador > 4){
+        contador = 1;
     }
-    document.getElementById("radio"+cont).checked = true;
+    document.getElementById("radio"+contador).checked = true;
 }
 
 /* Término da função do slider *//////////////////////////////////////////////////////////////////////////
