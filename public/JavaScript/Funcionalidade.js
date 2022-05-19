@@ -17,7 +17,7 @@ function go_cadastro() {
 /* Começo da função do Menu */////////////////////////////////////////////////////////////////////////////
 
 function abrir_menu() {
-    document.getElementById("id_menu").style.width = "100%";
+    document.getElementById("id_menu").style.width = "40vw";
 }
 function fechar() {
     document.getElementById("id_menu").style.width = "0";
@@ -63,19 +63,19 @@ function enviar_solicitacao(){
 
 /* Funções de sessão *///////////////////////////////////////////////////////////////////////////////////
 
-function validarSessao() {
+// function validarSessao() {
 
-    var idUsuario = sessionStorage.ID_USUARIO;
-    var nome = sessionStorage.NOME_USUARIO;
-    var email = sessionStorage.EMAIL_USUARIO;
-    var empresa = sessionStorage.FK_EMPRESA;
+//     var idUsuario = sessionStorage.ID_USUARIO;
+//     var nome = sessionStorage.NOME_USUARIO;
+//     var email = sessionStorage.EMAIL_USUARIO;
+//     var empresa = sessionStorage.FK_EMPRESA;
 
-    if (email != null && nome != null && idUsuario != null && empresa != null) {
-        perfil.innerHTML = `Olá, ${nome}`
-    } else {
-        window.location = "../Login.html";
-    }
-}
+//     if (email != null && nome != null && idUsuario != null && empresa != null) {
+//         perfil.innerHTML = `Olá, ${nome}`
+//     } else {
+//         window.location = "../Login.html";
+//     }
+// }
 
 // function limparSessao() {
 //     sessionStorage.clear();
