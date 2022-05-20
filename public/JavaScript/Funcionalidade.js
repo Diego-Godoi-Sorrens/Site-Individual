@@ -17,7 +17,7 @@ function go_cadastro() {
 /* Começo da função do Menu */////////////////////////////////////////////////////////////////////////////
 
 function abrir_menu() {
-    document.getElementById("id_menu").style.width = "40vw";
+    document.getElementById("id_menu").style.width = "50vw";
 }
 function fechar() {
     document.getElementById("id_menu").style.width = "0";
