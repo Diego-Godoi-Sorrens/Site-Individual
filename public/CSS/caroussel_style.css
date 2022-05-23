@@ -11,7 +11,6 @@ body{
 }
 
 ::-webkit-scrollbar {
-    display: none;
 
     float: left;
     top: -1px;
