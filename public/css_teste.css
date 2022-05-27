@@ -204,7 +204,7 @@ body{
     z-index: 2;
 }
 
-.banner_tropicalia {
+/* .banner_tropicalia {
     display: flex;
     padding-left: 10vh;
     flex-direction: column;
@@ -220,12 +220,12 @@ body{
     top: 10vh;
     display: flex;
     flex-direction: row;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 100%;
     height: 30vh;
     align-self: flex-start;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; */
+/* } */
 
 .banner_tropicalia .container_tropicalia_2{
     display: flex;
@@ -317,3 +317,73 @@ body{
 
 
 
+.banner_tropicalia_2 {
+    display: flex;
+    /* padding-left: 10vh; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f31be1;
+    color: #fff;
+    /* padding-left: 50px; */
+}
+
+.barra_geral{
+    left: 50%;
+    top: 90%;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #f3a81b;
+    z-index: 2;
+}
+
+.banner_tropicalia_2 .container_tropicalia{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.banner_tropicalia_2 .container_tropicalia .content{
+    /* border: 2px solid red; */
+    font-size: 22px;
+    width: 70%;
+    height: 100%;
+}
+
+.banner_tropicalia_2 .container_tropicalia .content .p5{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 5%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    width: 90%;
+    text-align: justify;
+}
+
+.imgs_tropicalia_2{
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 100%;
+}
+
+.imgs_tropicalia_2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgs_tropicalia_3{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 40%;
+    transform: translateX(50px);
+}
+
+.imgs_tropicalia_3 img{
+    width: 80%;
+}
