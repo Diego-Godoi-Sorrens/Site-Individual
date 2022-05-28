@@ -21,19 +21,18 @@ body{
     top: -1px;
     background-color: transparent;
 }
-
 ::-webkit-scrollbar-track-piece{
     position: absolute;
     background-color: transparent;
     
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background-color: rgb(243, 8, 86);
     border-radius: 10px;
     height: 10px;
 }
-  
+
 ::-webkit-scrollbar-track {
     display: none;
    -webkit-border-radios: 10px;
@@ -46,7 +45,6 @@ body{
     height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -58,6 +56,8 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: #065c54;
+    overflow: hidden;
+    filter: sepia(0.2);
 }
 
 
@@ -193,16 +193,21 @@ h1 a {
     /* width: 700px; */
     display: flex;
     cursor: pointer;
-    background-color: #2ba99d;
+    /* background-color: #2ba99d; */
     align-items: center;
     justify-content: center;
     border: none;
     position: fixed;
     z-index: 200;
+
+    background: rgba(0, 238, 255, 0.1);
+    /* overflow: hidden; */
+    backdrop-filter: blur(8px);
 }
 
 .abrir:hover {
-    background-color:#250c84;
+    background: rgba(0, 238, 255, 0.425);
+    /* backdrop-filter: blur(8px); */
     transform: translateZ(50px);
 }
 
@@ -230,6 +235,7 @@ li a:hover{
     width: 100vw;
     margin: 0 auto;
     display: flex;
+    /* overflow: hidden; */
 }
 
 main{
@@ -306,12 +312,12 @@ section.module.paralax:after{
 }
 
 section.module.paralax-1{
-    background-image: url(https://wallpaperaccess.com/full/6430337.jpg);
+    background-image: url(../img/2126140.jpg);
 }
 
 
 section.module.paralax-2{
-    background-image: url(https://media4.giphy.com/media/3oz8xur099boo4N9aU/giphy.gif);
+    background-image: url(../img/2851817.jpg);
 }
 
 section.module.paralax-3{
@@ -319,7 +325,7 @@ section.module.paralax-3{
 }
 
 section.module.paralax-4{
-    background-image: url(../img/RJ.jpg);
+    background-image: url(../img/2851753.jpg);
 }
 
 
@@ -328,7 +334,7 @@ section.module.paralax h1{
     z-index: 50;
     font-family: vintageQueens;
     font-size: 15em;
-    color: #f3a81b;
+    color: #ff1973;
     font-weight: 50;
     /* mix-blend-mode:hard-light; */
     animation: hue-animation 0.7s alternate infinite;
@@ -391,6 +397,52 @@ section.module.paralax h1{
     z-index: 2000;
 }
 
+.barra_geral_6{
+    right: 57%;
+    bottom: 92%;
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    /* transform: translate(-750px); */
+    background-color: #f3a81b;
+    z-index: 2000;
+}
+
+.barra_geral_7{
+    left: 50%;
+    top: 92%;
+    width: 150%;
+    height: 4px;
+    position: absolute;
+    transform: translate(-750px);
+    background-color: #250c84;
+    background-image: linear-gradient(to left,#ff1973, #250c84, #250c84);
+    z-index: 2000;
+}
+
+.barra_geral_8{
+    right: 50%;
+    top: 92%;
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    /* transform: translate(-300px); */
+    background-color: #ff1973;
+    background-image: linear-gradient(to right,#76107d, #ff1973, #ff1973);
+    z-index: 2000;
+}
+
+.barra_geral_9{
+    right: 100%;
+    /* top: 92%; */
+    width: 4px;
+    height: 85%;
+    position: absolute;
+    /* transform: translate(-300px); */
+    background-color: #f3a81b;
+    z-index: 2000;
+}
+
 .banner_br_60 {
     position: sticky;
     display: flex;
@@ -401,6 +453,7 @@ section.module.paralax h1{
     width: 100vw;
     height: 100vh;
     background-color: #065c54;
+    /* background-image: linear-gradient(to right,#065c54, #f3a81b); */
     color: #f3a81b;
 }
 
@@ -444,9 +497,9 @@ section.module.paralax h1{
     pointer-events: all;
 }
 
-.banner_br_60 .container .content2:hover{
+/* .banner_br_60 .container .content2:hover{
     transform: scale(+90%);
-}
+} */
 
 .banner_br_60 .container .p1{
     /* flex-direction: column; */
@@ -472,9 +525,9 @@ section.module.paralax h1{
     pointer-events: all;
 }
 
-.banner_br_60 .imgs:hover{
+/* .banner_br_60 .imgs:hover{
     transform: scale(+90%);
-}
+} */
 
 .banner_br_60 .imgs img{
     /* object-fit: cover; */
@@ -586,6 +639,7 @@ section.module.paralax h1{
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    /* background-image: linear-gradient(to right, #ff1973, #800232); */
     background-color: #ff1973;
     color: #fff;
     padding-left: 50px;
@@ -692,6 +746,8 @@ section.module.paralax h1{
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    /* background-image: linear-gradient(to right, #800232, #ff1973); */
+
     background-color: #ff1973;
     color: #fff;
     /* padding-left: 50px; */
@@ -761,6 +817,119 @@ section.module.paralax h1{
 
 
 
+.banner_tropicalia_3 {
+    display: flex;
+    position: sticky;
+
+    /* padding-top: 5vh; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #ff1973; */
+    /* background-image: linear-gradient(to right, #ff1973, #610035); */
+    background-image: linear-gradient(to right,#ff1973, #250c84);
+    color: #fff;
+    /* padding-left: 50px; */
+}
+
+.banner_tropicalia_3 .container_tropicalia{
+    display: flex;
+    /* border: 2px solid red; */
+    /* flex-direction: row; */
+    width: 100%;
+    height: 100%;
+}
+
+.banner_tropicalia_3 .container_tropicalia .content{
+    /* border: 2px solid red; */
+    font-size: 22px;
+    width: 40%;
+    height: 100%;
+}
+
+.banner_tropicalia_3 .container_tropicalia .content .p6{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0 5%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    width: 90%;
+    text-align: justify;
+}
+
+.imgs_tropicalia_4{
+    display: flex;
+    align-items: flex-end;
+    /* border: 2px solid red; */
+    /* padding-bottom: 10%; */
+    width: 60%;
+    height: 100%;
+}
+
+.imgs_tropicalia_4 img{
+    width: 100%;
+    height: 80%;
+}
+
+
+
+.banner_tropicalia_4 {
+    position: sticky;
+    display: flex;
+    /* padding-top: 5vh; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: #250c84;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.banner_tropicalia_4 .container_tropicalia{
+    display: flex;
+    /* border: 2px solid red; */
+    /* flex-direction: row; */
+    width: 100%;
+    height: 100%;
+}
+
+.banner_tropicalia_4 .container_tropicalia .content{
+    /* border: 2px solid red; */
+    font-size: 22px;
+    width: 50%;
+    height: 100%;
+}
+
+.banner_tropicalia_4 .container_tropicalia .content .p7{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 5%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    width: 90%;
+    text-align: justify;
+}
+
+.imgs_tropicalia_5{
+    padding-top: 8%;
+    width: 50%;
+    height: 100%;
+    /* transform: scale(150%);
+    transform: translate(-500px); */
+}
+
+.imgs_tropicalia_5 img{
+    width: 100%;
+    /* height: 50%; */
+    transform: scale(150%);
+    /* transform: translate(-500px); */
+}
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .wrapper_card{
