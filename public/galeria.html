@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/caroussel_style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/caroussel_style.css" />
     <script src="./JavaScript/Funcionalidade.js"></script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    
-    <title>Galería</title>
-</head>
-<body>
-    
 
-    <button onclick="abrir_menu()" id="abrir-menu" class="abrir"><h1><a>☰</a></h1></button>
+    <title>Galería</title>
+  </head>
+  <body>
+    <button onclick="abrir_menu()" id="abrir-menu" class="abrir">
+      <h1><a>☰</a></h1>
+    </button>
 
     <div id="id_menu" class="menu">
-        <h1><a href="javascript:void(0)" class="fechar" onclick="fechar()">X</a></h1>
-        <li><a href="#ANOS60" onclick="color()">Contexto Histórico</a></li>
-        <li><a href="#TROPICALIA" onclick="color()">O Movimento</a></li>
-        <li><a href="#PANISETCIRCENSIS" onclick="color()">Atlântico</a></li>
-        <li><a href="#ARTISTAS" onclick="color()">Principais Artistas</a></li>
-        <li><a href="#LEGADO" onclick="color()">Legado</a></li>
+      <h1>
+        <a href="javascript:void(0)" class="fechar" onclick="fechar()">X</a>
+      </h1>
+      <li><a href="#ANOS60" onclick="color()">Contexto Histórico</a></li>
+      <li><a href="#TROPICALIA" onclick="color()">O Movimento</a></li>
+      <li><a href="#PANISETCIRCENSIS" onclick="color()">Disco</a></li>
+      <li><a href="#ARTISTAS" onclick="color()">Principais Artistas</a></li>
+      <li><a href="#Fim" onclick="color()">Fim</a></li>
 
-        <div class="barra-v"></div>
+      <div class="barra-v"></div>
 
-        <li><a onclick="go_login()" class="diferent">Entrar</a></li>
-        <li><a onclick="go_cadastro()" class="diferent">Cadastrar-se</a></li>
+      <li><a onclick="go_login()" class="diferent">Entrar</a></li>
+      <li><a onclick="go_cadastro()" class="diferent">Cadastrar-se</a></li>
     </div>
 
     <!-- <div class="header">
@@ -51,273 +53,306 @@
     </div> -->
 
     <div class="wrapper">
-        <div class="items">
+      <div class="items">
+        <div class="item" id="ANOS60">
+          <div class="wrapper_home">
+            <main>
+              <section class="module paralax paralax-1" data-anime="left">
+                <h1 class="titulo" id="title">História</h1>
+              </section>
+            </main>
+          </div>
+        </div>
 
-            <div class="item" id="ANOS60">
-                <div class="wrapper_home">
-                    <main>
-                        
-                        <section class="module paralax paralax-4" data-anime="left">
-                            <h1 class="titulo" id="title">História</h1>
-                        </section>
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_br_60">
+                <div class="barra_geral_1"></div>
 
-                    </main>
+                <div class="container">
+                  <span class="content1"
+                    >contexto histórico
+                    <div class="barra_c1"></div
+                  ></span>
+                  <span class="content2"
+                    >Brasil<br />
+                    dos<br />
+                    anos<br />
+                    60
+                  </span>
+                  <span class="p1">
+                    <p>
+                      Por volta de 1967 o Brasil passava pela ditadura militar,
+                      ou seja, um período caótico cuja liberdade da população
+                      era drasticamente reduzida, a censura era uma prática
+                      corriqueira, acompanhada de muitas prisões, torturas,
+                      exílios e até mesmo assassinatos.
+                    </p>
+                  </span>
                 </div>
-            </div>
 
-
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-    
-                        
-
-                        <div class="banner_br_60">
-
-                            <div class="barra_geral_1"></div>
-                                            
-                            <div class="container">
-                                <span class="content1">contexto histórico <div class="barra_c1"></div></span>
-                                <span class="content2">Brasil<br> dos<br> anos<br> 60 </span>
-                                <span class="p1">
-                                    <p>
-                                        Por volta de 1967 o Brasil passava pela ditadura militar, ou seja, um período caótico cuja liberdade da população era drasticamente reduzida, a censura era uma prática corriqueira, acompanhada de muitas prisões, torturas, exílios e até mesmo assassinatos.
-                                    </p>
-                                </span>
-                            </div>
-                                    
-                            <div class="imgs">
-                                <img src="./img/brasil_anos_60_cont1.jpg.png">
-                            </div>
-                            <!-- </div>         -->
-                        
-                        </div>
-                                                                           
-
-
-                    </main>
+                <div class="imgs">
+                  <img src="./img/brasil_anos_60_cont1.jpg.png" />
                 </div>
-            </div>
-            
+                <!-- </div>         -->
+              </div>
+            </main>
+          </div>
+        </div>
 
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_br_60">
+                <div class="barra_geral_2"></div>
 
-                        <div class="banner_br_60">
-                                    
-                            <div class="barra_geral_2"></div>
-
-                            <div class="container_2">
-                                <span class="p2">
-                                    <p>
-                                        A arte era o meio mais próximo onde a população poderia se expressar, e, especialmente nos anos 60, a música era o maior desses meios, visto que a indústria musical brasileira teve um grande crescimento após a explosão da Bossa Nova, que fez o mundo voltar os olhos para um Brasil muito mais charmoso e culto, sem deixar de ter o teor exótico da arte latina, como por exemplo a música “Garota de Ipanema” de Tom Jobim que é considerada a segunda canção mais executada da história da música mundial ou música “Mas que Nada” de Jorge Ben Jor que é uma das mais regravadas do mundo. Além de que as pessoas começaram a ter muito mais acesso aos meios de consumo musical, como o disco de vinil, a transmissões via televisão e cinema.
-                                    </p>
-                                </span>
-                            </div>
-                            
-                            <div class="imgs_2">
-                                <img src="./img/brasil_anos_60_cont2.jpg.png">
-                            </div>
-
-                        </div>
-                        
-                        
-                    </main>
+                <div class="container_2">
+                  <span class="p2">
+                    <p>
+                      A arte era o meio mais próximo onde a população poderia se
+                      expressar, e, especialmente nos anos 60, a música era o
+                      maior desses meios, visto que a indústria musical
+                      brasileira teve um grande crescimento após a explosão da
+                      Bossa Nova, que fez o mundo voltar os olhos para um Brasil
+                      muito mais charmoso e culto, sem deixar de ter o teor
+                      exótico da arte latina, como por exemplo a música “Garota
+                      de Ipanema” de Tom Jobim que é considerada a segunda
+                      canção mais executada da história da música mundial ou
+                      música “Mas que Nada” de Jorge Ben Jor que é uma das mais
+                      regravadas do mundo. Além de que as pessoas começaram a
+                      ter muito mais acesso aos meios de consumo musical, como o
+                      disco de vinil, a transmissões via televisão e cinema.
+                    </p>
+                  </span>
                 </div>
-            </div>
 
-
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
-
-                        <div class="banner_br_60">
-
-                            <div class="barra_geral_3"></div>
-
-                            <div class="imgs_3">
-                                <img src="./img/brasil_anos_60_cont3.jpg.png">
-                            </div>
-                            
-                            <div class="container_3">
-                                <span class="p3">
-                                    <p>
-                                        Nessa época também havia diferentes frentes musicais, a própria Bossa Nova, que, superficialmente, fazia um samba mais sofisticado, a Jovem Guarda, que baseava seu comportamento nos trejeitos dos artistas de rock estadunidenses e ingleses, e tinham aqueles que acreditavam que as anteriores estavam contribuindo para a cultura dos colonizadores, por isso existiam aqueles que pregavam a soberania da cultura e política brasileira pré-bossa nova. Entretanto, muitos artistas não se encaixavam nesses rótulos, artistas que procuravam utilizar todas as novas possibilidades midiáticas, sem se render a elas, que tinham um jeito de criar música brasileira  sem perder a riqueza da arte estrangeira, artistas que queriam desestruturar a arte brasileira, e reconstruí-la de um jeito novo, ridicularizando o que era sério e se emocionando com o ridículo, provocando tanto o novo quanto o velho, seja em melodias, falas, jeitos ou vestimenta, esses eram os Tropicalistas.
-                                    </p>
-                                </span>
-                            </div>
-                    
-                        </div>
-
-
-                    </main>
+                <div class="imgs_2">
+                  <img src="./img/brasil_anos_60_cont2.jpg.png" />
                 </div>
-            </div>
+              </div>
+            </main>
+          </div>
+        </div>
 
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_br_60">
+                <div class="barra_geral_3"></div>
 
-            <div class="item" id="TROPICALIA">
-                <div class="wrapper_home">
-                    <main>
-                        
-                        <section class="module paralax paralax-1" data-anime="left">
-                            <h1 class="titulo" id="title">Tropicália</h1>
-                        </section>
-
-                    </main>
+                <div class="imgs_3">
+                  <img src="./img/brasil_anos_60_cont3.jpg.png" />
                 </div>
-            </div>
 
-
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
-
-                        <div class="banner_tropicalia">
-
-                            <div class="barra_geral_4"></div>
-
-                            <div class="container_tropicalia_2">
-                                <div class="imgs_tropicalia">
-                                    <img src="./img/tropicalismo_img1.jpg">
-                                </div>
-                    
-                                <span class="p4">
-                                    <p>
-                                        O movimento Tropicália surge em 1967, no meio da ditadura militar, que após tomar o poder o governo passou a depor, prender, censurar, torturar e exilar sem qualquer restrição, especialmente após o AI5 em 1968, Ato Institucional número 5, que proibia manifestações de natureza política, vetava o direito de “habeas corpus”, legalizava uma extrema extensão dos poderes do presidente, que agora podia fechar o congresso, cassar mandatos etc.
-                                    </p>
-                                </span>
-                            </div>
-                            
-                            <div class="container_tropicalia">
-                                <span class="content1">O Movimento<div class="barra_c4"></div></span>
-                                <span class="content2"><div class="t">T</div>ropicália</span>
-                            </div>
-                    
-                        </div>
-
-
-                    </main>
+                <div class="container_3">
+                  <span class="p3">
+                    <p>
+                      Nessa época também havia diferentes frentes musicais, a
+                      própria Bossa Nova, que, superficialmente, fazia um samba
+                      mais sofisticado, a Jovem Guarda, que baseava seu
+                      comportamento nos trejeitos dos artistas de rock
+                      estadunidenses e ingleses, e tinham aqueles que
+                      acreditavam que as anteriores estavam contribuindo para a
+                      cultura dos colonizadores, por isso existiam aqueles que
+                      pregavam a soberania da cultura e política brasileira
+                      pré-bossa nova. Entretanto, muitos artistas não se
+                      encaixavam nesses rótulos, artistas que procuravam
+                      utilizar todas as novas possibilidades midiáticas, sem se
+                      render a elas, que tinham um jeito de criar música
+                      brasileira sem perder a riqueza da arte estrangeira,
+                      artistas que queriam desestruturar a arte brasileira, e
+                      reconstruí-la de um jeito novo, ridicularizando o que era
+                      sério e se emocionando com o ridículo, provocando tanto o
+                      novo quanto o velho, seja em melodias, falas, jeitos ou
+                      vestimenta, esses eram os Tropicalistas.
+                    </p>
+                  </span>
                 </div>
-            </div>
+              </div>
+            </main>
+          </div>
+        </div>
 
-            
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
-                        <div class="banner_tropicalia_2">
+        <div class="item" id="TROPICALIA">
+          <div class="wrapper_home">
+            <main>
+              <section class="module paralax paralax-2" data-anime="left">
+                <h1 class="titulo" id="title">Tropicália</h1>
+              </section>
+            </main>
+          </div>
+        </div>
 
-                            <div class="barra_geral_5"></div>
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_tropicalia">
+                <div class="barra_geral_4"></div>
 
-                            <div class="container_tropicalia">
-                    
-                                <div class="imgs_tropicalia_2">
-                                    <img src="./img/tropicalismo_img3.jpg">
-                                </div>
-                    
-                                <div class="content">
-                                    <div class="imgs_tropicalia_3">
-                                        <img id="composicao" src="./img/tropicalismo_comp2.jpg.png">
-                                    </div>
-                                    <span class="p5">
-                                        <p>
-                                            E nesse contexto entra o principal dilema dos tropicalistas, como enfrentar um governo violento e inescrupuloso sem ter de pagar com sua integridade física, e ao mesmo tempo ser interessante, complexo e efetivo? Dessas perguntas nasce o movimento Tropicalista, que em sua arte codificavam mensagens de múltiplas interpretações, com valores intrinsecamente, porém discretamente, opostas aos militares, através de músicas, mídias, falas, vaias, trejeitos e roupas para gerar a reflexão., utilizando do sistema para gerar uma implosão do próprio sistema.
-                                        </p>
-                                    </span>
-                                </div>
-                    
-                    
-                            </div>
-                    
-                        </div>
+                <div class="container_tropicalia_2">
+                  <div class="imgs_tropicalia">
+                    <img src="./img/tropicalismo_img1.jpg" />
+                  </div>
 
-                    </main>
+                  <span class="p4">
+                    <p>
+                      O movimento Tropicália surge em 1967, no meio da ditadura
+                      militar, que após tomar o poder o governo passou a depor,
+                      prender, censurar, torturar e exilar sem qualquer
+                      restrição, especialmente após o AI5 em 1968, Ato
+                      Institucional número 5, que proibia manifestações de
+                      natureza política, vetava o direito de “habeas corpus”,
+                      legalizava uma extrema extensão dos poderes do presidente,
+                      que agora podia fechar o congresso, cassar mandatos etc.
+                    </p>
+                  </span>
                 </div>
-            </div>
 
-
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
-                        <div class="banner_tropicalia_3">
-
-                            <div class="barra_geral_6"></div>
-                            <div class="barra_geral_7"></div>
-
-                            <div class="container_tropicalia">
-                    
-                                <div class="imgs_tropicalia_4">
-                                    <img src="./img/tropicalismo_img4.jpg">
-                                </div>
-                    
-                                <div class="content">
-                                    <span class="p6">
-                                        <p>
-                                            Outra questão que dividia os artistas brasileiros era sobre a arte estrangeira, que por um lado muita gente achava ruim que o Brasil ficasse para trás, além de que muitos desses artistas gostavam da música, cinema e de pop art, e que o Brasil não precisava necessariamente se prender as suas tradições. E por outro lado havia aqueles que achavam um absurdo que a riqueza cultural brasileira fosse desperdiçada para dar valor ao que era estrangeiro, e que se entregar a tais práticas seria ceder o ouro aos colonizadores, o nível dessa questão era tão importante para o povo ao ponto de existir um protesto contra as guitarras elétricas, como se em plena ditadura o assunto mais urgente fosse a procedência das guitarras.
-                                        </p>
-                                    </span>
-                                </div>
-                    
-                    
-                            </div>
-                    
-                        </div>
-
-                    </main>
+                <div class="container_tropicalia">
+                  <span class="content1"
+                    >O Movimento
+                    <div class="barra_c4"></div
+                  ></span>
+                  <span class="content2"
+                    ><div class="t">T</div>
+                    ropicália</span
+                  >
                 </div>
-            </div>
+              </div>
+            </main>
+          </div>
+        </div>
 
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_tropicalia_2">
+                <div class="barra_geral_5"></div>
 
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
-                        <div class="banner_tropicalia_4">
+                <div class="container_tropicalia">
+                  <div class="imgs_tropicalia_2">
+                    <img src="./img/tropicalismo_img3.jpg" />
+                  </div>
 
-                            <div class="barra_geral_9"></div>
-
-                            <div class="barra_geral_8"></div>
-
-                            <div class="container_tropicalia">
-                    
-                                <div class="content">
-                                    <span class="p7">
-                                        <p>
-                                            E os tropicalistas influenciados pelas ideias do movimento antropofágico, consideraram que a verdadeira riqueza brasileira estava na capacidade de se complexificar a cultura, pois num país tão grande e diverso, uma única cultura é simplesmente impossível, por isso é parte do povo a capacidade de absorver novas culturas a fim de enriquecer as antigas, como por exemplo o próprio futebol, que não é originalmente do Brasil, entretanto não poderia ser mais brasileiro, o mesmo vale para o carnaval, uma festa mundial comum, mas não mais única que a do Brasil ou a própria Bossa Nova que mistura samba, musica erudita e jazz num estilo completamente novo. Fatores esses que tornam a diversidade brasileira uma única coisa, composta de outras coisas únicas. 
-                                        </p>
-                                    </span>
-                                </div>
-                    
-                                <div class="imgs_tropicalia_5">
-                                    <img src="./img/tropicalismo_comp1.jpg.png">
-                                </div>
-                    
-                            </div>
-                    
-                        </div>
-
-                    </main>
+                  <div class="content">
+                    <div class="imgs_tropicalia_3">
+                      <img
+                        id="composicao"
+                        src="./img/tropicalismo_comp2.jpg.png"
+                      />
+                    </div>
+                    <span class="p5">
+                      <p>
+                        E nesse contexto entra o principal dilema dos
+                        tropicalistas, como enfrentar um governo violento e
+                        inescrupuloso sem ter de pagar com sua integridade
+                        física, e ao mesmo tempo ser interessante, complexo e
+                        efetivo? Dessas perguntas nasce o movimento
+                        Tropicalista, que em sua arte codificavam mensagens de
+                        múltiplas interpretações, com valores intrinsecamente,
+                        porém discretamente, opostas aos militares, através de
+                        músicas, mídias, falas, vaias, trejeitos e roupas para
+                        gerar a reflexão., utilizando do sistema para gerar uma
+                        implosão do próprio sistema.
+                      </p>
+                    </span>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </main>
+          </div>
+        </div>
 
-            <div class="item">
-                <div class="wrapper_home">
-                    <main>
-                        
-                        <section class="module paralax paralax-2" data-anime="left">
-                            <h1 class="titulo" id="title">Fim?</h1>
-                        </section>
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_tropicalia_3">
+                <div class="barra_geral_6"></div>
+                <div class="barra_geral_7"></div>
 
-                    </main>
+                <div class="container_tropicalia">
+                  <div class="imgs_tropicalia_4">
+                    <img src="./img/tropicalismo_img4.jpg" />
+                  </div>
+
+                  <div class="content">
+                    <span class="p6">
+                      <p>
+                        Outra questão que dividia os artistas brasileiros era
+                        sobre a arte estrangeira, que por um lado muita gente
+                        achava ruim que o Brasil ficasse para trás, além de que
+                        muitos desses artistas gostavam da música, cinema e de
+                        pop art, e que o Brasil não precisava necessariamente se
+                        prender as suas tradições. E por outro lado havia
+                        aqueles que achavam um absurdo que a riqueza cultural
+                        brasileira fosse desperdiçada para dar valor ao que era
+                        estrangeiro, e que se entregar a tais práticas seria
+                        ceder o ouro aos colonizadores, o nível dessa questão
+                        era tão importante para o povo ao ponto de existir um
+                        protesto contra as guitarras elétricas, como se em plena
+                        ditadura o assunto mais urgente fosse a procedência das
+                        guitarras.
+                      </p>
+                    </span>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </main>
+          </div>
+        </div>
 
-            <!-- <div class="item">
+        <div class="item">
+          <div class="wrapper_home">
+            <main>
+              <div class="banner_tropicalia_4">
+                <div class="barra_geral_9"></div>
+
+                <div class="barra_geral_8"></div>
+
+                <div class="container_tropicalia">
+                  <div class="content">
+                    <span class="p7">
+                      <p>
+                        E os tropicalistas influenciados pelas ideias do
+                        movimento antropofágico, consideraram que a verdadeira
+                        riqueza brasileira estava na capacidade de se
+                        complexificar a cultura, pois num país tão grande e
+                        diverso, uma única cultura é simplesmente impossível,
+                        por isso é parte do povo a capacidade de absorver novas
+                        culturas a fim de enriquecer as antigas, como por
+                        exemplo o próprio futebol, que não é originalmente do
+                        Brasil, entretanto não poderia ser mais brasileiro, o
+                        mesmo vale para o carnaval, uma festa mundial comum, mas
+                        não mais única que a do Brasil ou a própria Bossa Nova
+                        que mistura samba, musica erudita e jazz num estilo
+                        completamente novo. Fatores esses que tornam a
+                        diversidade brasileira uma única coisa, composta de
+                        outras coisas únicas.
+                      </p>
+                    </span>
+                  </div>
+
+                  <div class="imgs_tropicalia_5">
+                    <img src="./img/tropicalismo_comp1.jpg.png" />
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+
+        <div class="item" id="Fim">
+          <div class="wrapper_home">
+            <main>
+              <section class="module paralax paralax-3" data-anime="left">
+                <h1 class="titulo" id="title">Fim</h1>
+              </section>
+            </main>
+          </div>
+        </div>
+
+        <!-- <div class="item">
                 <div class="wrapper_home">
                     <main>
                         
@@ -327,8 +362,7 @@
                 </div>
             </div> -->
 
-
-            <!-- <div class="item">
+        <!-- <div class="item">
                 <div class="wrapper_home">
                     <main>
 
@@ -343,25 +377,17 @@
                     </main>
                 </div>
             </div> -->
-            
-
-        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
 
 <script>
-
-    document.querySelector(".items")
-    .addEventListener("wheel", event => {
-
-        if (event.deltaY > 0){
-            event.target.scrollBy(300, 0)
-        }else{
-            event.target.scrollBy(-300, 0)
-        }
-
-    })
-
+  document.querySelector(".items").addEventListener("wheel", (event) => {
+    if (event.deltaY > 0) {
+      event.target.scrollBy(300, 0);
+    } else {
+      event.target.scrollBy(-300, 0);
+    }
+  });
 </script>
